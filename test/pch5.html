@@ -60,7 +60,7 @@
 
 		<div class="wrap">
 			<h1 class="hidden">XXXXXX</h1>
-
+			<div id="container"></div>
 
 			<!--视频弹窗-->
 			<div class="pu-video-box" id="puvidcont" style="display: none;">
@@ -70,7 +70,7 @@
 
 		</div>
 		<script src="//js.aq.qq.com/js/aq_common.js"></script>
-		<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<!--		<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>-->
 		<script src="//lol.qq.com/plugin/business/sell_common.min.js"  charset="UTF-8"></script>
 		<script>
 			lolSellCommon.init({
@@ -186,6 +186,44 @@
 
 
 		</script>
+
+		<!-- 使用相对协议，同时支持http和https -->
+
+		<script>
+			// 视频id
+			var player = new Txplayer({
+				containerId: '',
+				vid: 'p0032won201',
+				width: '600',
+				height: '400',
+				autoplay: true
+			});
+
+
+
+		</script>
+
+
+		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
+		<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
+		<script>
+			var config = {
+				containerId: 'container',
+				vid: '76071',
+				livepid: '',
+				width: '670',
+				height: '377',
+				autoplay: true
+			};
+			var player = new TxvLive(config);
+			player.on('ready', function () {
+				//准备完成开始播放
+			});
+		</script>
+
+
+
+
 		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 		<script>
 			//此段代码不能放到外链JS中，
