@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="robots" content="all">
+		<meta name="author" content="Tencent-CP" />
+		<meta name="Copyright" content="Tencent" />
+		<meta name="Description" content="英雄联盟官方网站，海量风格各异的英雄，丰富、便捷的物品合成系统，游戏内置的匹配、排行和竞技系统，独创的“召唤师”系统及技能、符文、天赋等系统组合，必将带你进入一个崭新而又丰富多彩的游戏世界。" />
+		<meta name="Keywords" content="英雄联盟,战斗学院,战斗学院系列,限定皮肤,战斗学院系列限定皮肤,lol,lol新手礼包,lol攻略,lol视频,lol视频攻略,英雄资料,英雄联盟战争学院,明星解说视频,101战争学院,英雄,攻略,WCG,点亮图标,赛事" />
+		<title>XXXXX-英雄联盟官方网站-腾讯游戏</title>
+		<link rel="stylesheet" href="css/index.css" media="screen and (min-device-width: 1025px)">
+		<link rel="stylesheet" href="css/index-m.css" media="screen and (max-device-width: 1024px)">
+		<!--[if lt IE 9]> <link rel="stylesheet" href="css/index.css"> <![endif]-->
+		<!-- 页面设计：cp | 页面制作：cp | 创建：2019-05-10 -->
+		<script>
+			//mode  移动端的适配方式 按需 传参  目前只有两种 px和rem
+			(function(win, doc, mode) {
+				var std = 750;
+				if(/(iPhone|iPad|iPod|iOS|Android|Windows Phone|BlackBerry|SymbianOS)/i.test(navigator.userAgent)) {
+					var h = document.getElementsByTagName("head")[0];
+					h.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-capable" content="yes">');
+					h.insertAdjacentHTML('beforeEnd', '<meta name="apple-mobile-web-app-status-bar-style" content="black">');
+					h.insertAdjacentHTML('beforeEnd', '<meta name="format-detection" content="telephone=no">');
+					h.insertAdjacentHTML('beforeEnd', '<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />');
+					if(mode == 'px') {
+						//	Px移动端速配
+						if (!win.addEventListener) return;
+					    var html=document.documentElement;
+					    function setFont()
+					    {
+					        function adaptVP(a){function c(){var c,d;return b.uWidth=a.uWidth?a.uWidth:750,b.dWidth=a.dWidth?a.dWidth:window.screen.width||window.screen.availWidth,b.ratio=window.devicePixelRatio?window.devicePixelRatio:1,b.userAgent=navigator.userAgent,b.bConsole=a.bConsole?a.bConsole:!1,a.mode?(b.mode=a.mode,void 0):(c=b.userAgent.match(/Android/i),c&&(b.mode="android-2.2",d=b.userAgent.match(/Android\s(\d+.\d+)/i),d&&(d=parseFloat(d[1])),2.2==d||2.3==d?b.mode="android-2.2":4.4>d?b.mode="android-dpi":d>=4.4&&(b.mode=b.dWidth>b.uWidth?"android-dpi":"android-scale")),void 0)}function d(){var e,f,g,h,c="",d=!1;switch(b.mode){case"apple":f=(window.screen.availWidth*b.ratio/b.uWidth)/b.ratio;c="width="+b.uWidth+",initial-scale="+f+",minimum-scale="+f+",maximum-scale="+f+",user-scalable=no";break;case"android-2.2":a.dWidth||(b.dWidth=2==b.ratio?720:1.5==b.ratio?480:1==b.ratio?375:.75==b.ratio?240:480),e=window.screen.width||window.screen.availWidth,375==e?b.dWidth=b.ratio*e:750>e&&(b.dWidth=e),b.mode="android-dpi",d=!0;case"android-dpi":f=160*b.uWidth/b.dWidth*b.ratio,c="target-densitydpi="+f+", width="+b.uWidth+", user-scalable=no",d&&(b.mode="android-2.2");break;case"android-scale":c="width="+b.uWidth+", user-scalable=no"}g=document.querySelector("meta[name='viewport']")||document.createElement("meta"),g.name="viewport",g.content=c,h=document.getElementsByTagName("head"),h.length>0&&h[0].appendChild(g)}function e(){var a="";for(key in b)a+=key+": "+b[key]+"; ";alert(a)}if(a){var b={uWidth:0,dWidth:0,ratio:1,mode:"apple",userAgent:null,bConsole:!1};c(),d(),b.bConsole&&e()}};adaptVP({uWidth:750});
+					    }
+					    win.addEventListener('resize',setFont,false)
+					    setFont();
+					}
+					else if(mode == 'rem') {
+						var docEl = doc.documentElement,
+							resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+							recalc = function() {
+								var clientWidth = docEl.clientWidth;
+								if(!clientWidth) return;
+								docEl.style.fontSize = 100 * (clientWidth / std) + 'px';
+							};
+						if(!doc.addEventListener) return;
+						recalc();
+						win.addEventListener(resizeEvt, recalc, false);
+						doc.addEventListener('DOMContentLoaded', recalc, false);
+					}
+				}
+			})(window, document, 'px');
+		</script>
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+    <p style="background:#3e1f10;color:#fbf5e7;padding:10px 0;text-align:center;width:100%;font-size:14px;position:fixed;z-index:99999;top:0;left:0;">您使用的IE浏览器版本过低，本站不再支持，<a href="//support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads" style="color:#F13C35">升级您的IE浏览器</a>，或使用<a href="//www.google.cn/chrome/"  style="color:#F13C35">Google Chrome</a>等高级浏览器，将会得到更好的体验！</p>
+<![endif]-->
+
+		<div class="wrap">
+			<h1 class="hidden">XXXXXX</h1>
+
+
+			<!--视频弹窗-->
+			<div class="pu-video-box" id="puvidcont" style="display: none;">
+				<div class="video-play" id="puvideowin"></div>
+				<a class="btn-close-public" href="javascript:;" onclick="PTTSendClick('btn','close','关闭');" title="关闭">×</a>
+			</div>
+
+		</div>
+		<script src="//js.aq.qq.com/js/aq_common.js"></script>
+		<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+		<script src="//lol.qq.com/plugin/business/sell_common.min.js"  charset="UTF-8"></script>
+		<script>
+			lolSellCommon.init({
+				mobileShareCfg: {
+					title: "战斗学院",
+					summery: "皮肤、礼包全新上线", //描述
+					subtitle: "战斗学院",
+					img: "https://game.gtimg.cn/images/lol/act/a20190510battle/share.png",
+					url: location.href.split('?')[0],
+					// WXtrigger:function(res){
+					//   alert("分享微信");
+					//   //微信动作回调，捕捉动作
+					// },
+					// WXToMessageSuccess:function(res){
+					//   alert("分享微信好友");
+					//   //微信分享个人成功
+					// },
+					// WXToTimelineSuccess:function(res){
+					//   //微信分享朋友圈成功
+					// },
+					// WXToQQSuccess:function(res){
+					//   //微信分享QQ成功
+					// },
+					// WXcancel:function(res){
+					//   //微信分享取消动作回调
+					// },
+					// WXfail:function(res){
+					//   //微信分享失败动作回调
+					// },
+					// QQtrigger:function(res){
+					//   //QQ动作回调
+					// },
+					// QQcallback:function(res){
+					//   //QQ分享成功
+					// }
+				},
+//				pcFixedBanner:{         //新增广告位使用，需要就加上 不需要删掉
+//			       url:"//lolriotmall.qq.com/list.shtml?tagid=166&amp;ADTAG=lolriotmall.pc.tgp.gift",
+//			       img:"//game.gtimg.cn/images/lol/act/a20190510battle/aid.jpg",
+//			       title:"K/DA应援周边",
+//			       bottom:130,
+//			       right:40
+//			    },
+				callback: function() {
+					index();
+				}
+			});
+
+
+			function index() {
+				if(lolSellCommon.isPC) {
+					lolSellCommon.loadScripts(['//ossweb-img.qq.com/images/lol/title/lolact.js']);
+					//pc 处理
+					$('.btn-skinvideo').click(function(){
+						var vidx = $('.btn-skinvideo').index(this);
+						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');
+						var player = new Txplayer({
+							containerId:'puvideowin',
+							vid:videoid,
+							width:864,
+							height:486,
+							autoplay: true
+						});
+						TGDialogS('puvidcont');
+					});
+
+					$('.btn-close-public').click(function(){
+						$('.video-play').empty();
+						closeDialog();
+					});
+
+
+				}
+				else {
+					//移动端 处理
+					$('.btn-skinvideo').click(function(){
+						var vidx = $('.btn-skinvideo').index(this);
+						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');
+						var player = new Txplayer({
+							containerId:'puvideowin',
+							vid:videoid,
+							width:864,
+							height:486,
+							autoplay: true
+						});
+						TGDialogS('puvidcont');
+					});
+
+					$('.btn-close-public').click(function(){
+						$('.video-play').empty();
+						closeDialog();
+					});
+
+				}
+			}
+
+			function TGDialogS(e){
+	            // 利用milo库引入dialog组件
+	            need("biz.dialog",function(Dialog){
+	                Dialog.show({
+	                    id:e,
+	                    bgcolor:'#000', //弹出 “遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+	                    opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+	                });
+	            });
+	        }
+	        function closeDialog(){
+	            // 利用milo库引入dialog组件
+	            need("biz.dialog",function(Dialog){
+	                Dialog.hide();
+	            });
+	        }
+
+
+		</script>
+		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+		<script>
+			//此段代码不能放到外链JS中，
+			var setSite = { //设置网站属性
+				siteType: "a20190510battle", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+				pageName: "首页", //必填项:页面中文名
+				project: "skin", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+				osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+			};
+			if(typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
+		</script>
+	</body>
+
+</html>
