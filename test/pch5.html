@@ -60,7 +60,11 @@
 
 		<div class="wrap">
 			<h1 class="hidden">XXXXXX</h1>
+			<h2>视频</h2>
 			<div id="container"></div>
+			<h2>拉视频</h2>
+
+			<div id="video_container"></div>
 
 			<!--视频弹窗-->
 			<div class="pu-video-box" id="puvidcont" style="display: none;">
@@ -203,13 +207,13 @@
 
 		</script>
 
-
+<!--直播-->
 		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
 		<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
 		<script>
 			var config = {
 				containerId: 'container',
-				vid: '76071',
+				vid: '100003601',
 				livepid: '',
 				width: '670',
 				height: '377',
@@ -221,8 +225,21 @@
 			});
 		</script>
 
+<!--拉视频-->
 
+		<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txp/js/iframe/api.js"></script>
+		<script>
+			// 点播方式
+			var player = new Txp.Player({
+				containerId: 'video_container',
+				width:800,
+				height:600,
+				vid: 'p0032won201',
+				autoplay:false,
+				mini:false  //是否使用迷你皮肤
+			});
 
+		</script>
 
 		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
 		<script>
