@@ -72,190 +72,225 @@
 				<a class="btn-close-public" href="javascript:;" onclick="PTTSendClick('btn','close','关闭');" title="关闭">×</a>
 			</div>
 
+
+<!--			js练习-->
+			<ul class="list-box" id="list-id">
+				<li><strong>标题</strong><img src="img/img1.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img2.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img3.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img4.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img5.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img6.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img7.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+				<li><strong>标题</strong><img src="img/img8.jpg" alt="图片"/>
+					<p>文案</p>
+				</li>
+			</ul>
+
 		</div>
-		<script src="//js.aq.qq.com/js/aq_common.js"></script>
+<!--		<script src="//js.aq.qq.com/js/aq_common.js"></script>-->
 <!--		<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>-->
-		<script src="//lol.qq.com/plugin/business/sell_common.min.js"  charset="UTF-8"></script>
-		<script>
-			lolSellCommon.init({
-				mobileShareCfg: {
-					title: "战斗学院",
-					summery: "皮肤、礼包全新上线", //描述
-					subtitle: "战斗学院",
-					img: "https://game.gtimg.cn/images/lol/act/a20190510battle/share.png",
-					url: location.href.split('?')[0],
-					// WXtrigger:function(res){
-					//   alert("分享微信");
-					//   //微信动作回调，捕捉动作
-					// },
-					// WXToMessageSuccess:function(res){
-					//   alert("分享微信好友");
-					//   //微信分享个人成功
-					// },
-					// WXToTimelineSuccess:function(res){
-					//   //微信分享朋友圈成功
-					// },
-					// WXToQQSuccess:function(res){
-					//   //微信分享QQ成功
-					// },
-					// WXcancel:function(res){
-					//   //微信分享取消动作回调
-					// },
-					// WXfail:function(res){
-					//   //微信分享失败动作回调
-					// },
-					// QQtrigger:function(res){
-					//   //QQ动作回调
-					// },
-					// QQcallback:function(res){
-					//   //QQ分享成功
-					// }
-				},
-//				pcFixedBanner:{         //新增广告位使用，需要就加上 不需要删掉
-//			       url:"//lolriotmall.qq.com/list.shtml?tagid=166&amp;ADTAG=lolriotmall.pc.tgp.gift",
-//			       img:"//game.gtimg.cn/images/lol/act/a20190510battle/aid.jpg",
-//			       title:"K/DA应援周边",
-//			       bottom:130,
-//			       right:40
-//			    },
-				callback: function() {
-					index();
-				}
-			});
+<!--		<script src="//lol.qq.com/plugin/business/sell_common.min.js"  charset="UTF-8"></script>-->
+<!--		<script>-->
+<!--			lolSellCommon.init({-->
+<!--				mobileShareCfg: {-->
+<!--					title: "战斗学院",-->
+<!--					summery: "皮肤、礼包全新上线", //描述-->
+<!--					subtitle: "战斗学院",-->
+<!--					img: "https://game.gtimg.cn/images/lol/act/a20190510battle/share.png",-->
+<!--					url: location.href.split('?')[0],-->
+<!--					// WXtrigger:function(res){-->
+<!--					//   alert("分享微信");-->
+<!--					//   //微信动作回调，捕捉动作-->
+<!--					// },-->
+<!--					// WXToMessageSuccess:function(res){-->
+<!--					//   alert("分享微信好友");-->
+<!--					//   //微信分享个人成功-->
+<!--					// },-->
+<!--					// WXToTimelineSuccess:function(res){-->
+<!--					//   //微信分享朋友圈成功-->
+<!--					// },-->
+<!--					// WXToQQSuccess:function(res){-->
+<!--					//   //微信分享QQ成功-->
+<!--					// },-->
+<!--					// WXcancel:function(res){-->
+<!--					//   //微信分享取消动作回调-->
+<!--					// },-->
+<!--					// WXfail:function(res){-->
+<!--					//   //微信分享失败动作回调-->
+<!--					// },-->
+<!--					// QQtrigger:function(res){-->
+<!--					//   //QQ动作回调-->
+<!--					// },-->
+<!--					// QQcallback:function(res){-->
+<!--					//   //QQ分享成功-->
+<!--					// }-->
+<!--				},-->
+<!--//				pcFixedBanner:{         //新增广告位使用，需要就加上 不需要删掉-->
+<!--//			       url:"//lolriotmall.qq.com/list.shtml?tagid=166&amp;ADTAG=lolriotmall.pc.tgp.gift",-->
+<!--//			       img:"//game.gtimg.cn/images/lol/act/a20190510battle/aid.jpg",-->
+<!--//			       title:"K/DA应援周边",-->
+<!--//			       bottom:130,-->
+<!--//			       right:40-->
+<!--//			    },-->
+<!--				callback: function() {-->
+<!--					index();-->
+<!--				}-->
+<!--			});-->
 
 
-			function index() {
-				if(lolSellCommon.isPC) {
-					lolSellCommon.loadScripts(['//ossweb-img.qq.com/images/lol/title/lolact.js']);
-					//pc 处理
-					$('.btn-skinvideo').click(function(){
-						var vidx = $('.btn-skinvideo').index(this);
-						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');
-						var player = new Txplayer({
-							containerId:'puvideowin',
-							vid:videoid,
-							width:864,
-							height:486,
-							autoplay: true
-						});
-						TGDialogS('puvidcont');
-					});
+<!--			function index() {-->
+<!--				if(lolSellCommon.isPC) {-->
+<!--					lolSellCommon.loadScripts(['//ossweb-img.qq.com/images/lol/title/lolact.js']);-->
+<!--					//pc 处理-->
+<!--					$('.btn-skinvideo').click(function(){-->
+<!--						var vidx = $('.btn-skinvideo').index(this);-->
+<!--						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');-->
+<!--						var player = new Txplayer({-->
+<!--							containerId:'puvideowin',-->
+<!--							vid:videoid,-->
+<!--							width:864,-->
+<!--							height:486,-->
+<!--							autoplay: true-->
+<!--						});-->
+<!--						TGDialogS('puvidcont');-->
+<!--					});-->
 
-					$('.btn-close-public').click(function(){
-						$('.video-play').empty();
-						closeDialog();
-					});
-
-
-				}
-				else {
-					//移动端 处理
-					$('.btn-skinvideo').click(function(){
-						var vidx = $('.btn-skinvideo').index(this);
-						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');
-						var player = new Txplayer({
-							containerId:'puvideowin',
-							vid:videoid,
-							width:864,
-							height:486,
-							autoplay: true
-						});
-						TGDialogS('puvidcont');
-					});
-
-					$('.btn-close-public').click(function(){
-						$('.video-play').empty();
-						closeDialog();
-					});
-
-				}
-			}
-
-			function TGDialogS(e){
-	            // 利用milo库引入dialog组件
-	            need("biz.dialog",function(Dialog){
-	                Dialog.show({
-	                    id:e,
-	                    bgcolor:'#000', //弹出 “遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
-	                    opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
-	                });
-	            });
-	        }
-	        function closeDialog(){
-	            // 利用milo库引入dialog组件
-	            need("biz.dialog",function(Dialog){
-	                Dialog.hide();
-	            });
-	        }
+<!--					$('.btn-close-public').click(function(){-->
+<!--						$('.video-play').empty();-->
+<!--						closeDialog();-->
+<!--					});-->
 
 
-		</script>
+<!--				}-->
+<!--				else {-->
+<!--					//移动端 处理-->
+<!--					$('.btn-skinvideo').click(function(){-->
+<!--						var vidx = $('.btn-skinvideo').index(this);-->
+<!--						var videoid = $('.btn-skinvideo').eq(vidx).attr('id-data');-->
+<!--						var player = new Txplayer({-->
+<!--							containerId:'puvideowin',-->
+<!--							vid:videoid,-->
+<!--							width:864,-->
+<!--							height:486,-->
+<!--							autoplay: true-->
+<!--						});-->
+<!--						TGDialogS('puvidcont');-->
+<!--					});-->
 
-		<!-- 使用相对协议，同时支持http和https -->
+<!--					$('.btn-close-public').click(function(){-->
+<!--						$('.video-play').empty();-->
+<!--						closeDialog();-->
+<!--					});-->
 
-		<script>
-			// 视频id
-			var player = new Txplayer({
-				containerId: '',
-				vid: 'p0032won201',
-				width: '600',
-				height: '400',
-				autoplay: true
-			});
+<!--				}-->
+<!--			}-->
+
+<!--			function TGDialogS(e){-->
+<!--	            // 利用milo库引入dialog组件-->
+<!--	            need("biz.dialog",function(Dialog){-->
+<!--	                Dialog.show({-->
+<!--	                    id:e,-->
+<!--	                    bgcolor:'#000', //弹出 “遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"-->
+<!--	                    opacity:70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选-->
+<!--	                });-->
+<!--	            });-->
+<!--	        }-->
+<!--	        function closeDialog(){-->
+<!--	            // 利用milo库引入dialog组件-->
+<!--	            need("biz.dialog",function(Dialog){-->
+<!--	                Dialog.hide();-->
+<!--	            });-->
+<!--	        }-->
+
+
+<!--		</script>-->
+
+<!--		&lt;!&ndash; 使用相对协议，同时支持http和https &ndash;&gt;-->
+
+<!--		<script>-->
+<!--			// 视频id-->
+<!--			var player = new Txplayer({-->
+<!--				containerId: '',-->
+<!--				vid: 'p0032won201',-->
+<!--				width: '600',-->
+<!--				height: '400',-->
+<!--				autoplay: true-->
+<!--			});-->
 
 
 
-		</script>
+<!--		</script>-->
 
 <!--直播-->
-		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>
-		<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>
+<!--		<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.11.3.min.js"></script>-->
+<!--		<script src="//vm.gtimg.cn/tencentvideo/txvlive/2017/txvlive.js"></script>-->
+<!--		<script>-->
+<!--			var config = {-->
+<!--				containerId: 'container',-->
+<!--				vid: '100003601',-->
+<!--				livepid: '',-->
+<!--				width: '670',-->
+<!--				height: '377',-->
+<!--				autoplay: true-->
+<!--			};-->
+<!--			var player = new TxvLive(config);-->
+<!--			player.on('ready', function () {-->
+<!--				//准备完成开始播放-->
+<!--			});-->
+<!--		</script>-->
+
+<!--&lt;!&ndash;拉视频&ndash;&gt;-->
+
+<!--		<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txp/js/iframe/api.js"></script>-->
+<!--		<script>-->
+<!--			// 点播方式-->
+<!--			var player = new Txp.Player({-->
+<!--				containerId: 'video_container',-->
+<!--				width:800,-->
+<!--				height:600,-->
+<!--				vid: 'p0032won201',-->
+<!--				autoplay:false,-->
+<!--				mini:false  //是否使用迷你皮肤-->
+<!--			});-->
+
+<!--		</script>-->
+
 		<script>
-			var config = {
-				containerId: 'container',
-				vid: '100003601',
-				livepid: '',
-				width: '670',
-				height: '377',
-				autoplay: true
-			};
-			var player = new TxvLive(config);
-			player.on('ready', function () {
-				//准备完成开始播放
-			});
+			var listN = document.getElementById('list-id').getElementsByTagName('li');
+			// var listnum=listn.length;
+			alert(listN)
 		</script>
 
-<!--拉视频-->
 
-		<script type="text/javascript" src="//vm.gtimg.cn/tencentvideo/txp/js/iframe/api.js"></script>
-		<script>
-			// 点播方式
-			var player = new Txp.Player({
-				containerId: 'video_container',
-				width:800,
-				height:600,
-				vid: 'p0032won201',
-				autoplay:false,
-				mini:false  //是否使用迷你皮肤
-			});
+<!--        <script src="//ossweb-img.qq.com/images/spiderMediaData/yxzj_new/mediaURLData_https.js"></script>-->
 
-		</script>
-
-
-        <script src="//ossweb-img.qq.com/images/spiderMediaData/yxzj_new/mediaURLData_https.js"></script>
-
-		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
-		<script>
-			//此段代码不能放到外链JS中，
-			var setSite = { //设置网站属性
-				siteType: "a20190510battle", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
-				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
-				pageName: "首页", //必填项:页面中文名
-				project: "skin", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
-				osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
-			};
-			if(typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
-		</script>
+<!--		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>-->
+<!--		<script>-->
+<!--			//此段代码不能放到外链JS中，-->
+<!--			var setSite = { //设置网站属性-->
+<!--				siteType: "a20190510battle", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx-->
+<!--				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)-->
+<!--				pageName: "首页", //必填项:页面中文名-->
+<!--				project: "skin", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;原生官网base;微社区ingame;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;-->
+<!--				osact: 0 //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置-->
+<!--			};-->
+<!--			if(typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！-->
+<!--		</script>-->
 	</body>
 
 </html>
